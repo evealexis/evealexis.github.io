@@ -59,7 +59,7 @@ li {
 }
 
 
-.parent {
+.wrapper {
 padding: 50px;
 }
 
@@ -68,6 +68,17 @@ padding: 50px;
         flex-direction: column;
 }
 
+.intro {
+    flex-wrap: nowrap;
+    max-width: 700px;
+}
+
 .projects>p {
     font-size: 1rem;
+}
+
+hr {
+    background-color: #B9B4C7; 
+    border: #B9B4C7;
+    margin: 20px;
 }
