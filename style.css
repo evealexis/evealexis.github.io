@@ -12,7 +12,7 @@ h1 {
     display: block;
 }
     
-p {
+.top-container, p {
     font-size: 2rem;
 }
 
@@ -41,12 +41,18 @@ a:link {
     color: #FAF0E6;
   }
 
+.projects li {
+    padding: 0;
+}
+
+.projects ul {
+    padding-left: 0;
+}
 
 li {
-        display: inline-block;
-        padding: 0 1rem;
-        list-style-type: none;
-
+     display: inline-block;
+     padding: 0 1rem;
+    list-style-type: none;
 }
 
 
@@ -73,7 +79,7 @@ padding: 50px;
     max-width: 700px;
 }
 
-.projects>p {
+.projects > p {
     font-size: 1rem;
 }
 
@@ -81,4 +87,15 @@ hr {
     background-color: #B9B4C7; 
     border: #B9B4C7;
     margin: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, auto);
+    gap: 20px;
+}
+
+.box p {
+    font-size: 1rem;
 }
