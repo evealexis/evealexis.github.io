@@ -1,105 +1,142 @@
-body {
-    background-color: #B9B4C7;
-    font-family: "EB Garamond", serif;
-    color: #352F44;
-    text-align: left;
-    display: block;
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri');
+
+body{
+    margin: 0;
+        font-family: "Hind Siliguri", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    background-color: #EDEDED;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
     margin: 0;
 }
 
-h1 {
-    font-size: 3rem;
-    display: block;
-}
-    
-.top-container, p {
-    font-size: 2rem;
+.content{
+    padding: 0 15% 15% 15%;
 }
 
-div {
-    display: block;
+header, nav{
+    font-size: 30px;
+    padding: 20px;
 }
 
-a {
-    text-decoration: none;
+header{
+    background-color: #6C4A4A;
+    width: 100%;
+    color: #EDEDED;
+    height: 100px;
+    margin-top: 0;
 }
+
+footer{
+    background-color: #6C4A4A;
+    width: 100%;
+    color: #EDEDED;
+    text-align: center;
+    height: 100px;
+    bottom: 0;
+}
+
+footer i{
+    font-size: 70px;
+}
+
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.projects{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.projects-img, .projects-text{
+    flex: 1;
+}
+
+.projects-text .icon-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-img{
+height: auto;
+max-width: 100%;
+}
+
+header p {
+    display: inline-block;
+    padding: 10px;
+}
+
+h1{
+    margin-bottom: 5px;
+}
+
+
+
+header nav{
+    display: inline-block;
+}
+
+i{
+    font-size: 40px;
+    margin: 5px;
+}
+
+.icon-text{
+    text-align: center;
+    width: auto;
+}
+
+.icon-text i {
+    margin: 0 auto;
+}
+
+span{
+    padding: 10px;
+}
+
+p{
+    margin-top: 0;
+}
+
+
+header p a:hover {
+    color: #EDEDED;
+  }
 
 a:link {
-    color: #352F44;
-    text-decoration: underline;
+    color: #EDEDED;
+    text-decoration: none;
   }
   
   a:visited {
-    color: #352F44;
+    color: #EDEDED;
   }
-  
+
   a:hover {
-    color: #FAF0E6;
+    color: #987070;
   }
   
   a:active {
-    color: #FAF0E6;
+    color: #EDEDED;
   }
 
-.projects li {
-    padding: 0;
-}
-
-.projects ul {
-    padding-left: 0;
-}
-
-li {
-     display: inline-block;
-     padding: 0 1rem;
-    list-style-type: none;
-}
-
-
-.top-container {
-    margin: 10px 0 0;
-}
-
-.footer {
-    margin: 10px 0 0;
-}
-
-.nav {
-    margin: 100px 0 0; 
-}
-
-
-.wrapper {
-padding: 50px;
-}
-
-.content {
-        display: flex;
-        flex-direction: column;
-}
-
-.intro {
-    flex-wrap: nowrap;
-    max-width: 700px;
-}
-
-.projects > p {
-    font-size: 1rem;
-}
-
-hr {
-    background-color: #B9B4C7; 
-    border: #B9B4C7;
-    margin: 20px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(1, auto);
-    gap: 20px;
-}
-
-.box p {
-    font-size: 1rem;
+img{
+    height: 450px;
+    width: 450px;
 }
