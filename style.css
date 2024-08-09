@@ -142,3 +142,9 @@ img{
 .widthbtn {
     width: 150px;
 }
+
+textarea{
+    resize: none;
+    width: 400px;
+    height: 200px;
+}
