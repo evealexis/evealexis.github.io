@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri');
 
-body{
+html, body{
     margin: 0;
         font-family: "Hind Siliguri", sans-serif;
         font-weight: 400;
@@ -8,6 +8,11 @@ body{
     background-color: #EDEDED;
     height: auto;
     cursor: default;
+    height: 100%;
+}
+
+.btn {
+    cursor: default !important;
 }
 
 .container{
@@ -140,7 +145,7 @@ a:link {
   }
 
 img{
-    height: 450px;
+    height: 400px;
     width: 450px;
 }
 
