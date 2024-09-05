@@ -6,12 +6,12 @@ document.getElementById("move-it-github").onclick = function () {
     location.href = "https://github.com/evealexis/move-it"
 };
 
-document.getElementById("simon-game").onclick = function () {
-    location.href = "https://evealexis.github.io/simon-game/"
+document.getElementById("dice-roll").onclick = function () {
+    location.href = "https://evealexis.github.io/dice-roll/"
 };
 
-document.getElementById("simon-game-github").onclick = function () {
-    location.href = "https://github.com/evealexis/simon-game"
+document.getElementById("dice-roll-github").onclick = function () {
+    location.href = "https://github.com/evealexis/dice-roll"
 };
 
 document.getElementById("to-do").onclick = function () {
