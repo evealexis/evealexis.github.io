@@ -8,6 +8,7 @@ html, body{
     background-color: #EDEDED;
     height: auto;
     cursor: default;
+    scroll-behavior: smooth;
 }
 
 .btn {

@@ -15,7 +15,7 @@ document.getElementById("dice-roll-github").onclick = function () {
 };
 
 document.getElementById("to-do").onclick = function () {
-    location.href = "https://evealexis.github.io/to-do/"
+    location.href = "https://evealexis.github.io/To-do/"
 };
 
 document.getElementById("to-do-github").onclick = function () {
