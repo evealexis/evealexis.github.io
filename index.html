@@ -1,105 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eve Alexis - Aspiring Software Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eve Alexis</title>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="icon" type="image/x-icon" href="images/icon.png">
 </head>
-<body>
 
-           <header><nav><a href="#">Eve Alexis</a></nav>
-           </header> 
-    <div class="container">           
-    <div class="container-content">
-        <div class="content">
+<body id="body">
+  <section class="banner-container">
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-a"></div>
+          <div class="col">
+            <div class="banner-content">
+              <h4>Hi there! I'm</h4>
+              <h1> Eve Alexis<h1>
+                  <h4>Aspiring Software Developer</h4>
+                  <h2><a href="http://github.com/evealexis"><i class="fa-brands fa-github"></i></a> | <a
+                      href="http://linkedin.com/in/evealex"><i class="fa-brands fa-linkedin"></i></a> | <a
+                      href="mailto:email@mail.com"><i class="fa-regular fa-envelope"></i></a></h2>
 
-            <h1>About me</h1>
-            <br>
-            <article class="about-me">
-                <p>I'm an aspiring Software Developer based in the UK! I enjoy crocheting, video games and cooking. My favourite time of the year is Christmas 🎄</p>
-            </article>
-    
-                <h1>My Skills</h1>
-                <br>
-               <article class="skills">
-                <div class="icon-text">
-                    <i class="fa-brands fa-html5"></i>
-                    <p>HTML</p>    
-                </div>
-                <div class="icon-text">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <p>CSS</p>    
-                </div>
-                <div class="icon-text">
-                    <i class="fa-brands fa-js"></i>
-                    <p>Javascript</p>             
-                </div>
-                <div class="icon-text">
-                    <i class="fa-brands fa-bootstrap"></i>
-                    <p>Bootstrap</p>
-                </div>
-                <div class="icon-text">
-                    <i class="fa-solid fa-database"></i>   
-                    <p>SQL</p>            
-                </div>
-               </article>
-    
-               <h1>My Projects</h1>
-               <br>
-               <article class="projects">
-                <div class="projects-img">
-                    <img src="images/move-it.png" alt="move it website screenshot">
-                </div>
-                <div class="projects-text">Moving courier demo website.
-                    <br>
-                    <br>
-                    <div class="icon-text">
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <p>Bootstrap</p>
-                    </div>
-                    <button type="button" class="btn btn-secondary widthbtn" id="move-it">View Demo</button>
-                    <button type="button" class="btn btn-light widthbtn" id="move-it-github">View Code</button>
-                </div>
 
-                <div class="projects-img">
-                    <img src="images/dice-roll.png" alt="dice roll game website screenshot">
-                </div>
-                <div class="projects-text">A simple javascript game where the player who gets the highest number wins.
-                    <br>
-                    <br>
-                    <div class="icon-text">
-                        <i class="fa-brands fa-js"></i>
-                        <p>Javascript</p>             
-                    </div>
-                    <button type="button" class="btn btn-secondary widthbtn" id="dice-roll">Play</button>
-                    <button type="button" class="btn btn-light widthbtn" id="dice-roll-github">View Code</button>
-                </div>
+                  <!-- Rounded switch -->
+                  <label class="switch">
+                    <input type="checkbox" id="switch">
+                    <span class="slider round"></span>
+                  </label>
 
-                <div class="projects-img">
-                    <img src="images/to-do.png" alt="todo website screenshot">
-                </div>
-                <div class="projects-text">To-do app with the ability to delete and mark items in the list as complete. Powered by javascript.
-                    <br>
-                    <br>
-                    <div class="icon-text">
-                        <i class="fa-brands fa-js"></i>
-                        <p>Javascript</p>             
-                    </div>
-                    <button type="button" class="btn btn-secondary widthbtn" id="to-do">View</button>
-                    <button type="button" class="btn btn-light widthbtn" id="to-do-github">View Code</button>
-                </div>
+                  <!-- SWITCH END-->
 
-               </article>
+
+            </div>
+          </div>
+          <div class="col-a"></div>
         </div>
-
-        </div>
-        </div>
-        <footer><a href="https://github.com/evealexis"><i class="fa-brands fa-github"></i></a></footer>
+      </div>
+    </div>
     </div>
 
-<script src="index.js"></script>
+    </div>
+  </section>
+
+  <main id="main">
+    <section class="skills">
+      <div class="container">
+        <div class="heading">
+          <h2>About me</h2>
+          <p>Aspiring software developer from London looking to bring beautiful designs to life with clean and
+            functional code.</p>
+          <p>And my favourite time of the year is christmas 🎄</p>
+          <br>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+        <div class="heading">
+          <h2>Projects</h2>
+        </div>
+        <div class="project-content">
+          <div class="project-card" id="myBtn"><img src="images/PythonGiftTracker.jpg"
+              alt="Christmas Gift Tracker"><br />
+            <div class="project-p">
+              <p>Xmas Gift Tracker</p>
+            </div>
+            <p>Python</p>
+          </div>
+
+          <div class="project-card" id="myBtn2"><img src="images/halloween1.jpg" alt="Halloween Trivia Game"
+              id="pro-card"><br />
+            <div class="project-p">
+              <p>Halloween Trivia Game</p>
+            </div>
+            <p>HTML | CSS | Javascript</p>
+          </div>
+
+          <div class="project-card" id="myBtn3"><img src="images/recipe1.jpg" alt="Random Recipe Generator"
+              id="pro-card"><br />
+            <div class="project-p">
+              <p>Random Recipe Generator</p>
+            </div>
+            <p>HTML | CSS | Javascript</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- MODAL BOX START-->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close"> </span>
+
+        <!-- SLIDESHOW IN MODAL START-->
+
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- image frame-->
+          <div class="slideImg-frame">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides1">
+              <img src="images/PythonGiftTracker.jpg">
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/PythonGiftTracker2.jpg">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+          </div>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot1" onclick="currentSlide1(1)"></span>
+          <span class="dot1" onclick="currentSlide1(2)"></span>
+        </div>
+
+
+        <!-- SLIDESHOW IN MODAL END -->
+
+
+
+        <br />
+        <div class="project-p">Xmas Gift Tracker<p>A simple python app to practise basic techniques using CLI (Command
+            Line Interface). Users can perform CRUD operations to keep track of gift purchases.
+          </p>
+        </div>
+        <div class="icons">
+          <button class="view">View</button> <button class="github">GitHub</button>
+          <br />
+          <br />
+          <div class="python"><i class="fa-brands fa-python"></i>
+            <p>Python</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- MODAL BOX END -->
+
+
+
+
+
+
+
+
+    <!-- MODAL BOX START PROJECT 2-->
+
+    <!-- The Modal -->
+    <div id="modalPro2" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close"></span>
+
+        <!-- SLIDESHOW IN MODAL START-->
+
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- image frame-->
+          <div class="slideImg-frame">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides2">
+              <img src="images/halloween1.jpg">
+            </div>
+
+            <div class="mySlides2">
+              <img src="images/halloween2.jpg">
+            </div>
+
+            <div class="mySlides2">
+              <img src="images/halloween3.jpg">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+          </div>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot2" onclick="currentSlide2(1)"></span>
+          <span class="dot2" onclick="currentSlide2(2)"></span>
+          <span class="dot2" onclick="currentSlide2(3)"></span>
+        </div>
+
+
+        <!-- SLIDESHOW IN MODAL END -->
+
+
+
+        <br />
+        <div class="project-p">Halloween Trivia Game
+          <p>A fun halloween themed trivia game using javascript DOM. There is a score tracking system, which returns
+            the score total at the end of the game.
+          </p>
+        </div>
+        <div class="icons">
+          <button class="view">View</button> <button class="github">GitHub</button>
+          <br />
+          <br />
+          <div class="javascript"><i class="fa-brands fa-js"></i>
+            <p>Javascript</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- MODAL BOX END -->
+
+
+
+
+    <!-- MODAL BOX START PROJECT 3 -->
+
+    <!-- The Modal -->
+    <div id="modalPro3" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close"></span>
+
+        <!-- SLIDESHOW IN MODAL START-->
+
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- image frame-->
+          <div class="slideImg-frame">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides3">
+              <img src="images/recipe1.jpg">
+            </div>
+
+            <div class="mySlides3">
+              <img src="images/recipe2.jpg">
+            </div>
+
+            <div class="mySlides3">
+              <img src="images/recipe3.jpg">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+          </div>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot3" onclick="currentSlide3(1)"></span>
+          <span class="dot3" onclick="currentSlide3(2)"></span>
+          <span class="dot3" onclick="currentSlide3(3)"></span>
+        </div>
+
+
+        <!-- SLIDESHOW IN MODAL END -->
+
+
+
+        <br />
+        <div class="project-p">Random Recipe Generator<p>Recipes are randomly generated using the fetch client using the
+            Tasty API. It reutrns the name of the recipe, ingredients and cooking instructions. Built with HTML, CSS and
+            Javascript to make it responsive and interactive.
+          </p>
+        </div>
+        <div class="icons">
+          <button class="view">View</button> <button class="github">GitHub</button>
+          <br />
+          <br />
+          <div class="python"><i class="fa-brands fa-python"></i>
+            <p>Python</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- MODAL BOX END -->
+
+
+
+
+
+    <section class="skills">
+      <div class="container">
+        <div class="heading">
+          <h2>My Skills</h2>
+          <p>HTML | CSS | Javascript | Python | MySQL | React.js | Bootstrap</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <br>
+    <section class="experience">
+      <div class="container">
+        <div class="heading">
+          <h2>My experience</h2>
+        </div>
+
+
+        <div class="experience-content">
+
+
+          <div class="experience-card">
+            <h5 class="date">07.2024 - 10.2024</h5>
+            <h5>Software Development Student</h5>
+            <h5>Just IT</h5>
+            <ul>
+              <li>12-week full-time intensive bootcamp in a collaborative environment, where I researched and developed
+                projects, submitting code for feedback to improve quality. I have gained foundational knowledge in
+                database design using relational databases and expanded my skill set by learning Python.</li>
+            </ul>
+            <span class="txt">Javascript</span>
+            <span class="txt">HTML</span>
+            <span class="txt">CSS</span>
+            <span class="txt">Python</span>
+            <span class="txt">MySQL</span>
+          </div>
+
+
+          <div class="experience-card">
+            <h5 class="date">04.2024 - present</h5>
+            <h5>Freelance Software Developer</h5>
+            <h5>Freelance</h5>
+            <ul>
+              <li>Independently create personal projects using: HTML, CSS, Javascript, SQL and frameworks such as React
+                and Bootstrap. Projects being tracked with GiHub for version control. Expanding my programming knowledge
+                through courses on Udemy.</li>
+            </ul>
+            <span class="txt">Javascript</span>
+            <span class="txt">React.js</span>
+            <span class="txt">Bootstrap</span>
+            <span class="txt">Flask</span>
+          </div>
+
+          <div class="experience-card">
+            <h5 class="date">01.2013 - 07.2024</h5>
+            <h5>Children’s Clothing Maker and Administrator</h5>
+            <h5>Online Retail</h5>
+            <ul>
+              <li>Allocated blocks of time during the day to crochet the items, prioritising orders that were urgent
+                first.</li>
+              <li>Provided friendly assistance and crocheted custom outfits for customers when requested, maintaining
+                100% positive customer satisfaction score.</li>
+              <li>Adjusted my stock based on popularity – crocheted more clothes.</li>
+            </ul>
+            <span class="txt">Customer Service</span>
+            <span class="txt">Time management</span>
+            <span class="txt">Attention to detail</span>
+          </div>
+
+          <div class="experience-card">
+            <h5 class="date">10.2021 - 04.2024</h5>
+            <h5>Check-in and Chat Volunteer</h5>
+            <h5>FoodCycle</h5>
+            <ul>
+              <li>Used a timer to provide a friendly and concise telephone service to guests based on their preferences
+              </li>
+              <li>Talked to the guests based on their interests, from information previous volunteers had noted about
+                them</li>
+              <li>Handled customer enquiries in the UK as well as the US and switched to the US inbox depending on
+                business requirements</li>
+              <li>Took down notes for other volunteers about the guests preferences and whether or not they want to
+                continue using the Check-in and chat service</li>
+            </ul>
+            <span class="txt">Customer Service</span>
+            <span class="txt">Time management</span>
+          </div>
+
+          <div class="experience-card">
+            <h5 class="date">09.2023 - 04.2024</h5>
+            <h5>Customer Support Associate</h5>
+            <h5>ZOE</h5>
+            <ul>
+              <li>Messaged an average of 50+ customers a day via live chat and email based on customer waiting time
+                utilising email template and tailoring them based on the customer’s needs.</li>
+              <li>Assisted customers throughout their health journey using a friendly and empathic manner.</li>
+              <li>Ensured that emails and live chat messages were tailored to the customer.</li>
+              <li>Handled customer enquiries in the UK as well as the US and switched to the US inbox depending on
+                business requirements</li>
+              <li>Escalated customer issues to the relevant departments, communicating in a concise and accurate manner.
+              </li>
+            </ul>
+            <span class="txt">Customer Service</span>
+            <span class="txt">Time management</span>
+            <span class="txt">Attention to detail</span>
+            <span class="txt">Initiative</span>
+            <span class="txt">IT</span>
+          </div>
+
+          <div class="experience-card">
+            <h5 class="date">10.2022 - 01.2023</h5>
+            <h5>Amazon Customer Service Associate</h5>
+            <h5>PROMAN</h5>
+            <ul>
+              <li>Provided friendly assistance to a diverse range of customers via telephone, email and live chat
+                escalating issues to the relevant departments, ensuring each query was handled quickly.</li>
+              <li>Drafted emails and live chat messages whilst maintaining professionalism and empathy for sensitive
+                customer issues.</li>
+              <li>Regularly attended customer service refresher meetings and assisted my team members when they needed
+                help in the group chat.</li>
+              <li>Assisted customers with technical issues such as linking their Amazon account with their televisions.
+              </li>
+            </ul>
+            <span class="txt">Customer Service</span>
+            <span class="txt">Time management</span>
+            <span class="txt">Attention to detail</span>
+          </div>
+
+          <div class="experience-card">
+            <h5 class="date">01.2022 - 04.2022</h5>
+            <h5>Delivery Sales Assistant</h5>
+            <h5>Savers Health and Beauty</h5>
+            <ul>
+              <li>Provided friendly assistance and helped customers by going the extra mile and checking for any items
+                in the stock room if the item wasn’t on the shop floor</li>
+              <li>Assisted my team members with serving customers at the till when needed. Asked for advice on how to
+                perform my job better.</li>
+              <li>Worked a variety of shifts – delivery shift at 5 am to the closing shift, finishing at 6.30pm.</li>
+              <li>Assisted customers with refunds and troubleshooting payment issues.</li>
+            </ul>
+            <span class="txt">Customer Service</span>
+            <span class="txt">Time management</span>
+            <span class="txt">Fast-Paced</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <section class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="col-a">
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <p>© Eve Alexis |
+            <div id="date"> </div>
+            </p>
+          </div>
+        </div>
+        <div class="col-a">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 </body>
+
 </html>
