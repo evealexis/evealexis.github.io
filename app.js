@@ -244,9 +244,6 @@ function showSlides3(n) {
 /* SLIDESHOW FOR MODAL END */
 
 
-/*  SWITCH BUTTON   */
-
-
 // Toggle darkmode
 const switchBut = document.getElementById("switch");
 const element = document.body;  
