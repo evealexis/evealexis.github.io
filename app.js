@@ -1,20 +1,41 @@
+// Footer
 footerDate = document.getElementById('date');
+
+// Modal buttons
+const xmasTracker = document.getElementById("xmas-tracker");
+const halloweenTrivia = document.getElementById("halloween-trivia");
+const recipeGenerator = document.getElementById("recipe-generator");
+const halloweenGitHub = document.getElementById("halloweenGit");
+const recipeGitHub = document.getElementById("recipeGit");
+
+// GitHub Links
+xmasTracker.addEventListener("click", () => {
+  window.location.href = "https://github.com/evealexis/python-CLI-xmas-gift-tracker";
+});
+
+halloweenGitHub.addEventListener("click", () => {
+  window.location.href = "https://github.com/evealexis/Halloween-Trivia";
+});
+
+recipeGitHub.addEventListener("click", () => {
+  window.location.href = "https://github.com/evealexis/Recipes-App";
+});
+
+// View Links
+halloweenTrivia.addEventListener("click", () => {
+  window.location.href = "/Halloween-Trivia";
+});
+
+recipeGenerator.addEventListener("click", () => {
+  window.location.href = "/Recipes-App";
+});
+
 
 // Get date
 const date = new Date();
 let year = date.getFullYear();
 
 footerDate.innerHTML = year;
-
-
-// // Gradient mouse move effect
-// const body = document.querySelector('body')
-// body.addEventListener('mousemove', (e) => {
-//     const mouseX = e.clientX;
-//     const mouseY = e.clientY;
-
-// body.style.background = `radial-gradient(at ${mouseX}px ${mouseY}px, #fff, #ADBEC8)`;
-// });
 
 
 

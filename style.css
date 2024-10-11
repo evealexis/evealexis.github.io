@@ -12,6 +12,36 @@ body {
     position: relative;
 }
 
+.dark-mode a:before {
+    color: #F9F6EE;
+}
+
+.dark-mode a {
+    position: relative;
+    color: #F9F6EE;
+    text-decoration: none;
+   cursor: default; 
+  }
+  
+  .dark-mode a:hover {
+    color: #F9F6EE;
+  }
+  
+  .dark-mode a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #F9F6EE;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: top left;
+  }
+
+
 .dark-mode .banner {
     background-image: url(images/dark.png);
     background-color: #000;
@@ -19,7 +49,7 @@ body {
     background-size: fixed;
     background-position-y: 40%;
     width: 100%;
-    color: white;
+    color: #F9F6EE;
 }
 
 .dark-mode .modal-content {
@@ -39,23 +69,23 @@ body {
     background-size: fixed;
     background-position-y: 40%;
     width: 100%;
-    color: #f8f9f9 ;
+    color: #F9F6EE;
 }
 
 .dark-mode h1 {
-    color: #f8f9f9;
+    color: #F9F6EE;
 }
 
 .dark-mode i {
-    color: white;
+    color: #F9F6EE;
 }
 
 .dark-mode h4 {
-    color: white;
+    color: #F9F6EE;
 }
 
 .dark-mode .projects {
-    color: white;
+    color: #F9F6EE;
 }
 
 
@@ -82,7 +112,7 @@ body {
 .dark-mode .view:hover {
     opacity: .3;
     background-color: back;
-    color: white;
+    color: #F9F6EE;
     border-color: grey;
 
 }
@@ -424,19 +454,6 @@ a {
   .active, .dot:hover {
     background-color: #717171;
   }
-  
-  /* Fading animation */
-  /* .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  } */
-
-
 
 /* SLIDESHOW FOR MODAL END */
 
@@ -444,12 +461,7 @@ a {
 
 
 
-
-
-
-
 /* SWITCH START */
-
 
 /* The switch - the box around the slider */
 .switch {
