@@ -7,6 +7,8 @@ const halloweenTrivia = document.getElementById("halloween-trivia");
 const recipeGenerator = document.getElementById("recipe-generator");
 const halloweenGitHub = document.getElementById("halloweenGit");
 const recipeGitHub = document.getElementById("recipeGit");
+const woolHouseGitHub = document.getElementById("woolHouseGit")
+const woolHouse = document.getElementById("woolHouse")
 
 // GitHub Links
 xmasTracker.addEventListener("click", () => {
@@ -55,9 +57,6 @@ btn.addEventListener("click", () => {
   modal.style.display = "block";
   document.body.style.overflow = "hidden"; // disables body scrolling when modal is open
 });
-
-
-
 
 // When the user clicks on <span> (x), close the modal
 span.addEventListener("click", () => {
@@ -122,12 +121,35 @@ window.addEventListener("click", (event) => {
     modalPro3.style.display = "none";
     document.body.style.overflow = "auto";
   }
-})
-
-/* */
-
+});
+/* MODAL BOX END */
 
 
+
+
+
+/* MODAL BOX FOR PROJECT 4 START */
+
+const btn4 = document.getElementById("myBtn4");
+const modalPro4 = document.getElementById("modalPro4");
+
+btn4.addEventListener("click", () => {
+  modalPro4.style.display = "block";
+  document.body.style.overflow = "hidden";
+});
+
+span.addEventListener("click", () => {
+  modalPro4.style.display = "none";
+  document.body.style.overflow = "auto";
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener("click", (event) => {
+  if (event.target == modalPro4) {
+    modalPro4.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+});
 
 
 /* MODAL BOX END */
@@ -238,6 +260,42 @@ function showSlides3(n) {
   }
   slides[slideIndex3-1].style.display = "block";
   dots[slideIndex3-1].className += " active";
+}
+
+
+/* SLIDESHOW FOR MODAL END */
+
+
+
+/* SLIDESHOW FOR MODAL START  PROJECT 4*/
+
+let slideIndex4 = 1;
+showSlides4(slideIndex4);
+
+// Next/previous controls
+function plusSlides4(n) {
+  showSlides4(slideIndex4 += n);
+}
+
+// Thumbnail image controls
+function currentSlide4(n) {
+  showSlides4(slideIndex4 = n);
+}
+
+function showSlides4(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides4");
+  let dots = document.getElementsByClassName("dot4");
+  if (n > slides.length) {slideIndex4 = 1}
+  if (n < 1) {slideIndex4 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex4-1].style.display = "block";
+  dots[slideIndex4-1].className += " active";
 }
 
 

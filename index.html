@@ -12,40 +12,42 @@
 </head>
 
 <body id="body">
-  <section class="banner-container">
-    <div class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-a"></div>
-          <div class="col">
-            <div class="banner-content">
-              <h4>Hi there! I'm</h4>
-              <h1> Eve Alexis<h1>
-                  <h4>Aspiring Software Developer</h4>
-                  <h2><a href="http://github.com/evealexis"><i class="fa-brands fa-github"></i></a> | <a
-                      href="http://linkedin.com/in/evealex"><i class="fa-brands fa-linkedin"></i></a> | <a
-                      href="mailto:email@mail.com"><i class="fa-regular fa-envelope"></i></a></h2>
+  <header>
+    <section class="banner-container">
+      <div class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-a"></div>
+            <div class="col">
+              <div class="banner-content">
+                <h4>Hi there! I'm</h4>
+                <h1> Eve Alexis<h1>
+                    <h4>Aspiring Software Developer</h4>
+                    <h2><a href="http://github.com/evealexis"><i class="fa-brands fa-github"></i></a> | <a
+                        href="http://linkedin.com/in/evealex"><i class="fa-brands fa-linkedin"></i></a> | <a
+                        href="mailto:email@mail.com"><i class="fa-regular fa-envelope"></i></a></h2>
 
 
-                  <!-- Rounded switch -->
-                  <label class="switch">
-                    <input type="checkbox" id="switch">
-                    <span class="slider round"></span>
-                  </label>
+                    <!-- Rounded switch -->
+                    <label class="switch">
+                      <input type="checkbox" id="switch">
+                      <span class="slider round"></span>
+                    </label>
 
-                  <!-- SWITCH END-->
+                    <!-- SWITCH END-->
 
 
+              </div>
             </div>
+            <div class="col-a"></div>
           </div>
-          <div class="col-a"></div>
         </div>
       </div>
-    </div>
-    </div>
+      </div>
 
-    </div>
-  </section>
+      </div>
+    </section>
+  </header>
 
   <main id="main">
     <section class="skills">
@@ -66,6 +68,16 @@
           <h2>Projects</h2>
         </div>
         <div class="project-content">
+
+          <div class="project-card" id="myBtn4"><img src="images/WoolHouse1.png" alt="WoolHouse"><br />
+            <div class="project-p">
+              <p>WoolHouse</p>
+            </div>
+            <p>Flask | SQL | Javascript | Sass | Bootstrap</p>
+          </div>
+
+
+
           <div class="project-card" id="myBtn"><img src="images/PythonGiftTracker.jpg"
               alt="Christmas Gift Tracker"><br />
             <div class="project-p">
@@ -93,6 +105,109 @@
         </div>
       </div>
     </section>
+
+
+
+
+
+
+    <!-- MODAL BOX START 4-->
+
+    <!-- The Modal -->
+    <div id="modalPro4" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close"> </span>
+
+        <!-- SLIDESHOW IN MODAL START-->
+
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- image frame-->
+          <div class="slideImg-frame">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides4">
+              <img src="images/WoolHouse1.png">
+            </div>
+
+            <div class="mySlides4">
+              <img src="images/WoolHouse2.png">
+            </div>
+
+            <div class="mySlides4">
+              <img src="images/WoolHouse3.png">
+            </div>
+
+            <div class="mySlides4">
+              <img src="images/WoolHouse4.png">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+          </div>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot4" onclick="currentSlide4(1)"></span>
+          <span class="dot4" onclick="currentSlide4(2)"></span>
+          <span class="dot4" onclick="currentSlide4(3)"></span>
+          <span class="dot4" onclick="currentSlide4(4)"></span>
+        </div>
+
+
+        <!-- SLIDESHOW IN MODAL END -->
+
+
+
+        <br />
+        <div class="project-p">WoolHouse<p>A demo e-commerce website selling crochet accessories and wool. Users can add
+            items to basket. Database temporarily holds customer selection using SQLite. Has a chatbox feature that
+            generates a random message. Built using: Flask, SQL Javascript, Sass and Bootstrap.
+          </p>
+        </div>
+        <div class="icons">
+          <button class="view" id="woolHouse">View</button>
+          <button class="github" id="woolHouseGit">GitHub</button>
+          <br />
+          <br />
+          <div class="lang_icons">
+            <div class="flask"><img width="50" height="50" src="https://img.icons8.com/ios/50/flask.png" alt="flask" />
+              <p>Flask</p>
+            </div>
+            <div class="sql"><img src="./images/sql.png" alt="SQL">
+              <p>SQL</p>
+            </div>
+            <div class="javascript"><img src="./images/javascript.png" alt="Javascript">
+              <p>Javascript</p>
+            </div>
+            <div class="sass"><img src="./images/sass.png" alt="Sass">
+              <p>Sass</p>
+            </div>
+            <div class="bootstrap"><img src="./images/bootstrap.png" alt="Bootstrap">
+              <p>Bootstrap</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    </div>
+
+    <!-- MODAL BOX END -->
+
+
+
+
+
 
 
 
@@ -150,9 +265,10 @@
           <button class="github" id="xmas-tracker">GitHub</button>
           <br />
           <br />
-          <div class="python"><i class="fa-brands fa-python"></i>
+          <div class="python"><img src="./images/python.png" alt="Python" width="30px" height="30px">
             <p>Python</p>
           </div>
+
         </div>
       </div>
 
@@ -228,7 +344,7 @@
             id="halloweenGit">GitHub</button>
           <br />
           <br />
-          <div class="javascript"><i class="fa-brands fa-js"></i>
+          <div class="javascript"><img src="./images/javascript.png" alt="Javascript" width="30px" height="30px">
             <p>Javascript</p>
           </div>
         </div>
@@ -301,7 +417,7 @@
           <button class="view" id="recipe-generator">View</button> <button class="github" id="recipeGit">GitHub</button>
           <br />
           <br />
-          <div class="python"><i class="fa-brands fa-python"></i>
+          <div class="python"><img src="./images/python.png" alt="Python" width="30px" height="30px">
             <p>Python</p>
           </div>
         </div>
