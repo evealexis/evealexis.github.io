@@ -23,6 +23,11 @@ recipeGitHub.addEventListener("click", () => {
   window.location.href = "https://github.com/evealexis/Recipes-App";
 });
 
+woolHouseGitHub.addEventListener("click", () => {
+  window.location.href = "https://github.com/evealexis/WoolHouse"
+})
+
+
 // View Links
 halloweenTrivia.addEventListener("click", () => {
   window.location.href = "/Halloween-Trivia";
@@ -31,6 +36,10 @@ halloweenTrivia.addEventListener("click", () => {
 recipeGenerator.addEventListener("click", () => {
   window.location.href = "/Recipes-App";
 });
+
+woolHouse.addEventListener("click", () => {
+  window.location.href = "https://eea96.pythonanywhere.com"
+})
 
 
 // Get date
